@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useState} from 'react';
 import './login.css'
+import firebase from '../../config/firebase';
+import 'firebase/auth';
 
 function Login(){
+    const [email, setEmail] = useState();
+    const [senha, setSenha] = useState();
+
+    function logar(){
+        firebase.auth().signInWithEmailAndPassword(email, senha).then(resultado => {
+            alert('USUARIO LOGADO!');
+        }).catch(error => {
+            alert('ERRO!');
+        });
+    }
+
     return(
         <div className="login-content d-flex align-items-center">
                 <form className="form-signin mx-auto">
                 <div className="text-center mb-4">
                     <h1 className="h3 mb-3 fw-bold text-white">Login</h1>
                     
-                        <input type="email" id="inputEmail" class="form-control my-2" placeholder="Email" />   
-                        <input type="password" id="inputPassword" class="form-control my-2" placeholder="Senha" />
+                        <input onChange={(e) => setEmail(e.target.value) } type="email" id="inputEmail" class="form-control my-2" placeholder="Email" />   
+                        <input onChange={(e) => setSenha(e.target.value) } type="password" id="inputPassword" class="form-control my-2" placeholder="Senha" />
                     
-                    <button className="w-100 btn btn-lg btn-block btn-login" type="submit">Sign in</button>
+                    <button onClick={logar} className="w-100 btn btn-lg btn-block btn-login" type="button">Logar</button>
                     
                     <div className="msg-login text-white my-5">
                         <span><strong>WOW!</strong> Você esta conectado! &#128077; </span>
