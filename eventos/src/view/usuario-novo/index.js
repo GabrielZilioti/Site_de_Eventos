@@ -58,10 +58,9 @@ function NovoUsuario(){
 
                 {
                     carregando ? <div className="spinner-border text-danger text-center" role="status"><span class="visually-hidden">Loading...</span></div>
-
-                    
+ 
                     : <button onClick={cadastrar} type="button" className=" btn btn-lg btn-block mt-3 mb-5 btn-cadastro">Cadastrar</button>
-
+                
                 }
                 
                 <div className="msg-login text-black my-5">
