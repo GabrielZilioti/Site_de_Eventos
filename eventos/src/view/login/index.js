@@ -6,20 +6,24 @@ function Login(){
         <div className="login-content d-flex align-items-center">
                 <form className="form-signin mx-auto">
                 <div className="text-center mb-4">
-                    <h1 className="h3 mb-3 fw-normal">Login</h1>
+                    <h1 className="h3 mb-3 fw-bold text-white">Login</h1>
                     
-                    
-                    <div>
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" />
-                    </div>
-                    
-                    <div>    
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" />
-                    </div>
+                        <input type="email" id="inputEmail" class="form-control my-2" placeholder="Email" />   
+                        <input type="password" id="inputPassword" class="form-control my-2" placeholder="Senha" />
                     
                     <button className="w-100 btn btn-lg btn-block btn-login" type="submit">Sign in</button>
                     
-                    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+                    <div className="msg-login text-white my-5">
+                        <span><strong>WOW!</strong> Você esta conectado! &#128077; </span>
+                        <br></br>
+                        <span><strong>OPS!</strong> Verifique o Email e a Senha &#128078; </span>
+                    </div>
+
+                    <div className="opcoes-login mt-5">
+                        <a href="#" className="mx-2">Recuperar Senha</a>
+                        <span className="text-white">&#9737;</span>
+                        <a href="#" className="mx-2">Quero Cadastrar</a>
+                    </div>
                 </div>
             </form>
         </div>
