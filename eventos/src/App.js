@@ -1,8 +1,16 @@
 import React from 'react'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+
+// Paginas
+import Login from './view/login'
+import NovoUsuario from './view/usuario-novo'
 
 function App() {
   return (
-    <h1>Olá! Kleb</h1>
+    <Router>
+      <Route exact path='/' component={Login} />
+      <Route exact path='/novousuario' component={NovoUsuario} />
+    </Router>
   );
 }
 
