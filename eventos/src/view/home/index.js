@@ -1,9 +1,12 @@
 import React, { useState} from 'react';
-import './home.css'
+import './home.css';
 import {Link} from 'react-router-dom';
+import Navbar from '../../componentes/navbar';
 
 function Home(){
     return(
-        <h1>Pagina inicial</h1>
+        <Navbar/>
     )
 }
+
+export default Home
