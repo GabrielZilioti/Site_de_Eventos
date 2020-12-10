@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 
 import firebase from '../../config/firebase';
 import 'firebase/auth';
+import Navbar from '../../componentes/navbar';
 
 function Login(){
     const [email, setEmail] = useState();
@@ -20,6 +21,8 @@ function Login(){
     }
 
     return(
+        <>
+        <Navbar/>
         <div className="login-content d-flex align-items-center">
                 <form className="form-signin mx-auto">
                 <div className="text-center mb-4">
@@ -45,7 +48,7 @@ function Login(){
                 </div>
             </form>
         </div>
-
+        </>
     )
 }
 

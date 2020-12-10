@@ -5,14 +5,17 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Login from './view/login'
 import NovoUsuario from './view/usuario-novo'
 import Home from './view/home'
+import Navbar from './componentes/navbar'
 
 
 function App() {
   return (
+    
     <Router>
-      <Route exact path='/' component={Login} />
+      <Route exact path='/' component={Home} />
       <Route exact path='/novousuario' component={NovoUsuario} />
-      <Route exact path='/home' component={Home} />
+      <Route exact path='/login' component={Login} />
+      
     </Router>
   );
 }
