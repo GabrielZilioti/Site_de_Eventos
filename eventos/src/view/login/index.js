@@ -38,6 +38,7 @@ function Login(){
             {useSelector(state => state.usuarioLogado) > 0 ? <Redirect to='/' /> : null}
                 <form className="form-signin mx-auto">
                 <div className="text-center mb-4">
+                <img src="logo.png" className="img-fluid" />
                     <h1 className="h3 mb-3 fw-bold text-white">Login</h1>
                     
                         <input onChange={(e) => setEmail(e.target.value) } type="email" id="inputEmail" class="form-control my-2" placeholder="Email" />   

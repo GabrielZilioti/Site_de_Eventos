@@ -23,3 +23,7 @@
 .opcoes-login a:hover{
     color: #f21667;
 }
+
+.img-fluid{
+    width: 3cm;
+}
