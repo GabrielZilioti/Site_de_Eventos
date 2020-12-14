@@ -4,7 +4,7 @@
 
 .nav-link{
     color: #fff;
-    transition: .3s esae;
+    transition: .3s ease-in;
 }
 
 .nav-link:hover{
