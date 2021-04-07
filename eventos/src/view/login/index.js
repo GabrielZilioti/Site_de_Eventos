@@ -33,7 +33,6 @@ function Login(){
 
     return(
         <>
-        <Navbar/>
         <div className="login-content d-flex align-items-center">
             {useSelector(state => state.usuarioLogado) > 0 ? <Redirect to='/' /> : null}
                 <form className="form-signin mx-auto">

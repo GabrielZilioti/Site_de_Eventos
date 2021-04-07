@@ -22,7 +22,7 @@ function Navbar(){
               useSelector(state => state.usuarioLogado) > 0 ?
               <>
                 <li className="nav-item">
-                    <a className="nav-link" aria-current="page" href="">Publicar Evento</a>
+                    <a className="nav-link" aria-current="page" href="eventocadastro">Publicar Evento</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" aria-current="page" href="">Meus Eventos</a>

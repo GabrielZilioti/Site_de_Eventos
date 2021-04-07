@@ -9,7 +9,8 @@ import NovoUsuario from './view/usuario-novo'
 import Home from './view/home'
 import Navbar from './componentes/navbar'
 import { isModuleDeclaration } from '@babel/types';
-import UsuarioRecuperarSenha from './view/usuario-recuperar-senha'
+import UsuarioRecuperarSenha from './view/usuario-recuperar-senha';
+import EventoCadastro from './view/evento-cadastro';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path='/novousuario' component={NovoUsuario} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/usuariorecuperarsenha' component={UsuarioRecuperarSenha} />
+        <Route exact path='/eventocadastro' component={EventoCadastro}/>
       </Router>
     </Provider>
   );
