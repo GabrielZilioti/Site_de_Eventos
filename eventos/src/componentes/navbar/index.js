@@ -9,7 +9,7 @@ function Navbar(){
 
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            <spam className="navbar-brand text-white fw-bold">Eventos</spam>
+            <img src="logo3.png" className="img-fluid" style={{maxHeight:50}} style={{maxWidth:50}} href="/"/>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars text-white"></i>
             </button>

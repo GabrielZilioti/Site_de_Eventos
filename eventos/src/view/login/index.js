@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import './login.css'
 import {Link, Redirect} from 'react-router-dom';
 
@@ -38,7 +38,7 @@ function Login(){
             {useSelector(state => state.usuarioLogado) > 0 ? <Redirect to='/' /> : null}
                 <form className="form-signin mx-auto">
                 <div className="text-center mb-4">
-                <img src="logo.png" className="img-fluid" />
+                <img src="logo3.png" className="img-fluid"/>
                     <h1 className="h3 mb-3 fw-bold text-white">Login</h1>
                     
                         <input onChange={(e) => setEmail(e.target.value) } type="email" id="inputEmail" class="form-control my-2" placeholder="Email" />   
@@ -54,7 +54,7 @@ function Login(){
                     </div>
 
                     <div className="opcoes-login mt-5">
-                        <a Link="#" className="mx-2">Recuperar Senha</a>
+                        <Link to='/usuariorecuperarsenha' className="mx-2">Recuperar Senha </Link>
                         <span className="text-white">&#9737;</span>
                         <Link to='novousuario' className="mx-2">Quero Cadastrar</Link>
                     </div>
